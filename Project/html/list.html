@@ -15,6 +15,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <link href="../css/dashboard.css" rel="stylesheet">
+    <link href="../css/list.css" rel="stylesheet">
 
     <script src="../js/list.js"></script>
 </head>
@@ -29,12 +30,17 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
+
             </button>
-            <a class="navbar-brand" href="#">Project name</a>
+
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-            </ul>
+            <div>
+
+
+
+
+
 
             <span class="navbar-form navbar-right">
 
@@ -43,15 +49,26 @@
 
           </span>
 
+                <span id="tttt" class="navbar-form navbar-right">
+
+
+           <!-- 입력상자입니닷~~ -->
+
+
+          </span>
+
         </div>
     </div>
+ </div>
 </nav>
 
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
             <ul class="nav nav-sidebar">
-                <li class="active"><a href="#">Book 검색 <span class="sr-only">(current)</span></a></li>
+                <li class="active"><a href="list.html">Search Boook <span class="sr-only">(current)</span></a></li>
+                <li class="activeinsert"><a href="insert.html">ADD Book <span class="sr-only">(current)</span></a></li>
+                <li><a href="login.html">LOGIN</a> </li>
             </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
@@ -66,6 +83,9 @@
                         <th>가격</th>
                         <th>삭제</th>
                         <th>수정</th>
+                        <th>정보보기</th>
+                        <th>서평</th>
+
                     </tr>
                     </thead>
                     <tbody>

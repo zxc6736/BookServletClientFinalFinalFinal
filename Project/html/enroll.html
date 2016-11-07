@@ -15,16 +15,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <link href="../css/dashboard.css" rel="stylesheet">
+    <link href="../css/enroll.css" rel="stylesheet">
 
     <script src="../js/list.js"></script>
-    <h1>회원가입 페이지</h1>
+    <h1 id="enrollhead" align="center">회원가입 페이지</h1><br><br><br>
 </head>
 
-<body>
+<body  align="center">
 
-<div>id<input type="text" id="loginid"></div><br>
-<div>email<input type="text" id="loginemail"></div>
-<div>Password<input type="text" id="loginpass"></div>
-<input type="button" value="확인" onclick="enterlogin()">
+<div id="idtext">ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="enrollid"></div><br><br><br>
+<div id="idemail">EMAIL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="enrollemail"></div><br><br><br>
+<div id="idpass">PASSWORD&nbsp;&nbsp;<input type="text" id="enrollpass"></div><br><br><br>
+<input type="button" value="Comfirm" onclick="enroll()"id="enrollbtn">>
 </body>
 </html>

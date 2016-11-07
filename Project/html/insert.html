@@ -39,7 +39,7 @@
             <span class="navbar-form navbar-right">
 
            <!-- 입력상자입니닷~~ -->
-            <input type="text" id="keyword" class="form-control" placeholder="Search..."  onkeyup="searchBook()">
+
 
           </span>
 
@@ -51,8 +51,9 @@
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
             <ul class="nav nav-sidebar">
-                <li class="active"><a href="#">Book 검색 <span class="sr-only">(current)</span></a></li>
-                <li class="activeinsert"><a href="insert.html">도서 추가 <span class="sr-only">(current)</span></a></li>
+                <li class="active"><a href="list.html">Search Boook <span class="sr-only">(current)</span></a></li>
+                <li class="activeinsert"><a href="insert.html">ADD Book <span class="sr-only">(current)</span></a></li>
+                <li><a href="login.html">LOGIN</a> </li>
             </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
@@ -61,18 +62,21 @@
                 <table class="table table-striped">
                     <thead>
                     <tr>
-                        <th>책표지</th>
+                        <th>ISBN</th>
                         <th>책제목</th>
                         <th>저자</th>
                         <th>가격</th>
-                        <th>삭제</th>
-                        <th>수정</th>
-                        <th>정보보기</th>
-
                     </tr>
+
                     </thead>
                     <tbody>
-
+                    <tr>
+                    <td> <input type="text" id="insertisbn"></td>
+                    <td> <input type="text" id="inserttitle"></td>
+                    <td> <input type="text" id="insertauthor"></td>
+                    <td> <input type="text" id="insertprice"></td>
+                    <td> <input type="button" id="insertbtn" value="추가" onclick="insertBook()"></td>
+                    </tr>
                     </tbody>
                 </table>
             </div>
