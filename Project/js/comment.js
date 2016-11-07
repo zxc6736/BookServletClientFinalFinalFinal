@@ -53,14 +53,16 @@ $(function () {
         success: function (result) {
            for (var i = 0; i < result.length; i++) {
 
-                 var divd = $("<div></div>").text(result[i].id);
-                 var divp = $("<div></div>").text(result[i].text);
-                 var divt = $("<div></div>").text(result[i].date);
+                 var tr = $("<tr></tr>");
+                 var divd = $("<td></td>").text(result[i].id);
+                 var divp = $("<td></td>").text(result[i].text);
+                 var divt = $("<td></td>").text(result[i].date);
 
 
-                 $("#enrollcomment").append(divd);
-                 $("#enrollcomment").append(divp);
-                 $("#enrollcomment").append(divt);
+               tr.append(divd);
+               tr.append(divp);
+               tr.append(divt);
+               $("#enrollcomment").append(tr);
            }
      },
         error: function () {
@@ -87,14 +89,15 @@ function wrcommentbtn() {
         },
         success: function (result) {
 
-           $(location).attr("href","comment.html");
+            $(location).attr("href","comment.html");
           var divd = $("<div></div>").text(result.id);
             var divp = $("<div></div>").text(herecomment);
            var divt = $("<div></div>").text(result.date);
 
-           $("#enrollcomment").append(divd);
-           $("#enrollcomment").append(divp);
-           $("#enrollcomment").append(divt);
+            tr.append(divd);
+            tr.append(divp);
+            tr.append(divt);
+            $("#enrollcomment").append(tr);
 
 
 
